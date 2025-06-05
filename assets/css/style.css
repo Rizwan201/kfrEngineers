@@ -22607,18 +22607,9 @@ body{
 
 	}
 
-<<<<<<< HEAD
-.parent-list li{
-	margin-left: 20px;
-	padding: 5px 0;
-	list-style-type: square;
-
-}
-=======
 	.parent-list li{
 		padding: 5px 0;
 	}
->>>>>>> 0477a432eb936a0da0f692347afd44d749d62763
 
 	.child-list{
 		padding: 10px 0 10px 30px;
@@ -23491,6 +23482,22 @@ height: 108px;
 	border-radius: 12px;
 	box-shadow: 0 4px 20px rgba(0,0,0,0.4);
   }
+
+  .product-image-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    /* flex-wrap: wrap; */
+}
+
+.product-image-row img {
+    flex: 1 1 48%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
   
   .product-description {
 	font-size: 16px;
@@ -23674,14 +23681,14 @@ height: 108px;
 .aboutus-client-logos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
+    gap: 15px;
+    /* justify-items: center; */
     align-items: center;
 }
 
 .client-logo-card {
     background: #2e2e2e;
-    padding: 15px;
+    padding: 10px;
     border-radius: 12px;
     height: 120px;
     display: flex;
@@ -23692,14 +23699,13 @@ height: 108px;
 }
 .client-logo-card img {
     max-width: 100%;
-    max-height: 70px;
+    max-height: 100%;
     object-fit: contain;
 	border-radius: 2px;
 }
 .client-logo-card:hover {
     transform: translateY(-5px);
 }
-
 
 .aboutus-awards-wrapper {
     display: flex;
